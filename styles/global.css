@@ -16,12 +16,12 @@
 
 	--font-family: "Poppins", sans-serif;
 	--h1: bold 2rem/125% var(--font-family);
-	--text-md: 400 .875rem/170% var(--font-family);
-	--text-sm: 400 .75rem/170% var(--font-family);
+	--text-md: 400 1rem/170% var(--font-family);
+	--text-sm: 400 .875rem/170% var(--font-family);
 
 
 	--py-sm: 1rem;
-	--py-md: 1.5rem;
+	--py-md: 1.25rem;
 	--py-xl: 2rem;
 
 	--px-lg: 1rem;
@@ -54,6 +54,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+
+	font: var(--text-sm);
+	color: var(--text-color-secondary);
 }
 ol, ul {
 	list-style: none;
@@ -71,8 +74,14 @@ table {
 	border-spacing: 0;
 }
 
+ul[role="list"] {
+	list-style: none;
+}
+
 @media (width >= 80rem) {
 	:root {
 		--px-lg: 2rem;
+
+		--py-md: 1.5rem;
 	}
 }
