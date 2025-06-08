@@ -87,6 +87,10 @@ img {
 	max-width: 100%;
 }
 
+#gallery {
+	margin-top: rem;
+}
+
 @media (width >= 80rem) {
 	:root {
 		--px-lg: 2rem;
