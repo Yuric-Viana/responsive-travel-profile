@@ -1,25 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travelgram</title>
     <link rel="stylesheet" href="styles/index.css">
 </head>
+
 <body>
     <header>
-        <div class="container flex py-md">
+        <div class="container flex py-md justify">
             <img src="assets/icons/Logo.svg" alt="Logo Trevelgram">
             <ul rol="list" class="flex items-center gap-1">
                 <li class="flex items-center gap-1">
                     <p class="desktop-only">Explorar</p>
                 </li>
-                <li class="desktop-only">Minhas viagens</li>
+                <li class="desktop-only">
+                    <a href="#trips">Minhas viagens</a>
+                </li>
                 <li>
                     <img src="assets/icons/Profile pic.svg" alt="">
                 </li>
             </ul>
         </div>
     </header>
+
+    <section id="about">
+        <div class="about-me grid gap py-xl justify">
+            <div class="main grid container">
+                <img src="assets/Profile pic.svg" alt="Imagem da Isabela Torres">
+
+                <div class="grid">
+                    <h1>Isabela Torres</h1>
+                    <p>Amante de viagens, cultura e gastronomia. 🌍✈️
+                        Aqui compartilho as histórias registradas em cada clique, explorando cantinhos fascinantes do
+                        nosso planeta a partir da movimentada cidade de São Paulo. 🏙️📸</p>
+                </div>
+            </div>
+
+            <div class="info container">
+                <ul role="list" class="grid gap-1">
+                    <li class="items-center flex">
+                        <img src="assets/icons/MapPin.svg" alt="">
+                        São Paulo, Brazil
+                    </li>
+                    <li class="items-center flex">
+                        <img src="assets/icons/AirplaneTilt.svg" alt="">
+                        37 países
+                    </li>
+                    <li class="items-center flex">
+                        <img src="assets/icons/Image.svg" alt="">
+                        240 fotos
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>

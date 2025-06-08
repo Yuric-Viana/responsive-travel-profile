@@ -74,8 +74,17 @@ table {
 	border-spacing: 0;
 }
 
+a {
+	text-decoration: none;
+	color: var(--text-color-secondary);
+}
+
 ul[role="list"] {
 	list-style: none;
+}
+
+img {
+	max-width: 100%;
 }
 
 @media (width >= 80rem) {

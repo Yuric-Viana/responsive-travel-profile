@@ -1,0 +1,47 @@
+#about {
+    background-color: var(--surface-color);
+
+    & h1 {
+        color: var(--text-color-primary);
+        font: var(--h1);
+    }
+
+    & .main > div {
+        width: 18.5rem;
+        margin-top: 2rem;
+        gap: .5rem;
+    }
+
+    & .container {
+        --px-lg: 2rem
+    }
+
+    & ul {
+        margin-top: 2rem;
+
+        & li {
+            gap: .5rem;
+        }
+    }
+
+    @media (width >= 80rem) {
+        .about-me {
+            grid-auto-flow: column;
+        }
+
+        & .main {
+            grid-auto-flow: column;
+            align-items: center;
+            gap: 2rem;
+            
+            & > div {
+                width: 24rem;
+                margin-top: 0;
+            }
+        }
+
+        & .info {
+            width: 17.5rem;
+        }
+    }
+}

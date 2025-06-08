@@ -1,4 +1,6 @@
 header {
+    background-color: var(--surface-color);
+
     & ul li:nth-child(1) {
         background: url(../assets/icons/MagnifyingGlass.svg) no-repeat;
         padding-left: 2rem;
@@ -12,7 +14,8 @@ header {
         cursor: pointer;
     }
 
-    & li:hover {
+    & li:hover,
+    & li a:hover {
         color: var(--brand-color);
     }
 }
