@@ -87,8 +87,13 @@ img {
 	max-width: 100%;
 }
 
-#gallery {
-	margin-top: rem;
+footer .container {
+	padding-block: 1.375rem;
+	text-align: center;
+
+	& > div + div {
+		justify-content: center;
+	}
 }
 
 @media (width >= 80rem) {
@@ -96,5 +101,10 @@ img {
 		--px-lg: 2rem;
 
 		--py-md: 1.5rem;
+	}
+
+	footer .container {
+		grid-auto-flow: column;
+		justify-content: space-between;
 	}
 }
